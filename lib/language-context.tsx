@@ -24,7 +24,7 @@ const translations = {
     // Hero
     heroTitle: "Leading Provider of Industrial Automation Solutions",
     heroSubtitle:
-      "Certified experts in Variable Frequency Drives (VFDs), Low Voltage Systems & Industrial Automation. Trusted by industries across Oman for over 30 years.",
+      "Certified experts in Variable Frequency Drives (VFDs), Low Voltage Systems & Industrial Automation. Trusted by industries across Oman.",
     viewServices: "Explore Our Solutions",
     contactUs: "Request a Consultation",
 

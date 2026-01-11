@@ -96,10 +96,10 @@ export function Contact() {
                       <a href="tel:+96876373445" className="text-blue-600 hover:underline text-sm sm:text-base">
                         +968 7637 3445
                       </a>
-                      <div className="text-sm sm:text-base text-gray-600">|</div>
+                      <div className="text-sm sm:text-base text-gray-600"></div>
                       <div className="text-sm sm:text-base">
                         <a href="tel:+96875044677" className="text-blue-600 hover:underline">
-                          +968 7504 4677
+                         +968 7504 4677
                         </a>
                       </div>
                     </div>
