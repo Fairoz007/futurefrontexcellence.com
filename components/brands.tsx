@@ -17,6 +17,27 @@ const brands = [
   "Hitachi",
 ]
 
+function getInitials(name: string) {
+  const parts = name.split(/[\s-]+/).filter(Boolean)
+  if (parts.length === 1) return parts[0].slice(0, 3).toUpperCase()
+  return parts.map((p) => p[0]).slice(0, 3).join("").toUpperCase()
+}
+
+const colorPalette = [
+  "#0ea5a4",
+  "#2563eb",
+  "#0f172a",
+  "#e11d48",
+  "#f59e0b",
+  "#7c3aed",
+  "#06b6d4",
+  "#059669",
+  "#b91c1c",
+  "#06b6d4",
+  "#2563eb",
+  "#334155",
+]
+
 export function Brands() {
   const { t } = useLanguage()
 
@@ -36,9 +57,25 @@ export function Brands() {
                 className="bg-white border border-gray-200 rounded-lg sm:rounded-xl p-4 sm:p-5 lg:p-6 flex items-center justify-center hover:border-blue-600 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-in fade-in slide-in-from-bottom-4 min-h-[80px] sm:min-h-[90px]"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <span className="text-gray-700 font-semibold text-center text-xs sm:text-sm leading-tight">
-                  {brand}
-                </span>
+                <div className="flex flex-col items-center">
+                  <svg
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label={brand}
+                    className="rounded-md shadow-sm"
+                  >
+                    <rect width="56" height="56" rx="10" fill={colorPalette[index % colorPalette.length]} />
+                    <text x="50%" y="50%" fill="#fff" fontSize="14" fontWeight="700" dominantBaseline="middle" textAnchor="middle">
+                      {getInitials(brand)}
+                    </text>
+                  </svg>
+
+                  <span className="sr-only">{brand}</span>
+                  <span className="mt-2 text-gray-700 text-xs text-center hidden sm:block">{brand}</span>
+                </div>
               </div>
             ))}
           </div>

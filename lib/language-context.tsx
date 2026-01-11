@@ -88,7 +88,7 @@ const translations = {
       "Expert printed circuit board (PCB) diagnosis, component-level repair, and testing for industrial control systems. Extend equipment life and reduce replacement costs with our professional PCB services.",
 
     // Brands
-    brandsTitle: "Authorized Service Partners",
+    brandsTitle: "Reliable  Service Partners",
     brandsSubtitle: "Factory-certified to service the world's leading industrial automation brands",
 
     // Contact
