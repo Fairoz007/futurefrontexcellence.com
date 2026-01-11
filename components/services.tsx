@@ -60,21 +60,14 @@ export function Services() {
   ]
 
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <section id="services" className="bg-white py-12 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="inline-block mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-50 rounded-full border border-blue-100">
-              <span className="text-blue-700 text-xs sm:text-sm font-bold tracking-wide">
-                {t("services").toUpperCase()}
-              </span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 text-balance px-4">
+          <div className="mb-12 sm:mb-16 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 text-left px-4">
               {t("servicesTitle")}
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto text-balance px-4">
-              {t("servicesSubtitle")}
-            </p>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl text-left px-4">{t("servicesSubtitle")}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">

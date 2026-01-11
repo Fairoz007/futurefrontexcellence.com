@@ -35,19 +35,14 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id="contact" className="bg-gradient-to-b from-white to-gray-50 py-12 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10 sm:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="inline-block mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-50 rounded-full border border-blue-100">
-              <span className="text-blue-700 text-xs sm:text-sm font-bold tracking-wide">
-                {t("contact").toUpperCase()}
-              </span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">
+          <div className="mb-10 sm:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4 text-left">
               {t("contactTitle")}
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4">{t("contactSubtitle")}</p>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 text-left">{t("contactSubtitle")}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
@@ -76,7 +71,7 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{t("location")}</h3>
-                      <p className="text-gray-600 text-sm sm:text-base">Oman</p>
+                      <p className="text-gray-600 text-sm sm:text-base">PC: 119, Al Amarat, Muscat, Sultanate of Oman</p>
                     </div>
                   </div>
 
@@ -86,11 +81,8 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{t("email")}</h3>
-                      <a
-                        href="mailto:info@futurefrontoman.com"
-                        className="text-blue-600 hover:underline text-sm sm:text-base break-all"
-                      >
-                        info@futurefrontoman.com
+                      <a href="mailto:sales@futurefrontexcellence.com" className="text-blue-600 hover:underline text-sm sm:text-base break-all">
+                        sales@futurefrontexcellence.com
                       </a>
                     </div>
                   </div>
@@ -101,9 +93,15 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{t("phone")}</h3>
-                      <a href="tel:+96812345678" className="text-blue-600 hover:underline text-sm sm:text-base">
-                        +968 1234 5678
+                      <a href="tel:+96876373445" className="text-blue-600 hover:underline text-sm sm:text-base">
+                        +968 7637 3445
                       </a>
+                      <div className="text-sm sm:text-base text-gray-600">|</div>
+                      <div className="text-sm sm:text-base">
+                        <a href="tel:+96875044677" className="text-blue-600 hover:underline">
+                          +968 7504 4677
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </CardContent>

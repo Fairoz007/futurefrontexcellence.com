@@ -32,9 +32,13 @@ const translations = {
     aboutTitle: "About Us",
     aboutSubtitle: "Three Decades of Engineering Excellence",
     aboutText1:
-      "Future Front Excellence LLC is your trusted partner for industrial automation solutions in Oman. With over 30 years of proven expertise in Low Voltage (LV) systems, Variable Frequency Drives (VFDs), and comprehensive automation technologies, we deliver reliable solutions that power critical operations across diverse industries.",
+      "Future Front Excellence LLC is a specialized industrial automation company with over 30 years of collective experience in Low Voltage (LV), Variable Frequency Drives (VFDs), and Automation systems.",
     aboutText2:
-      "Our highly skilled team brings decades of hands-on experience in installation, commissioning, repair, and preventive maintenance of industrial drive systems. We are factory-certified and authorized to service premium global brands including ABB, Siemens, Danfoss, Schneider Electric, Yaskawa, Delta, INVT, Toshiba, WEG, and LS—ensuring your equipment performs at peak efficiency with maximum uptime.",
+      "We have successfully delivered solutions across a wide range of industries, including Oil & Gas, Cement and Mining, Water & Wastewater (Pumping & Desalination), HVAC and Building Infrastructure, Manufacturing, and Industrial Automation. Our team understands the real challenges industries face with drive systems. Whether it is installation and commissioning, fault diagnosis and repair, upgrades, or long-term maintenance, we deliver reliable and cost-effective solutions with a strong focus on quality and performance.",
+    missionTitle: "Our Mission",
+    missionDesc: "To provide reliable, high-quality, and cost-effective VFD and automation services that help our clients operate efficiently and with confidence. We aim to build long-term partnerships by offering fast support, flexible solutions, and strong technical expertise focused on customer-specific needs.",
+    visionTitle: "Our Vision",
+    visionDesc: "To become one of the leading VFD and automation service providers in the region, recognized for excellence, multi-brand expertise, and customer satisfaction. Future Front Excellence LLC strives to be the trusted partner helping industries move forward through smarter and more sustainable automation solutions.",
     ourCapabilities: "Industries We Serve with Excellence",
     capability1: "Oil & Gas: Upstream, midstream, and downstream operations",
     capability2: "Cement & Mining: Heavy-duty industrial applications",
@@ -133,9 +137,13 @@ const translations = {
     aboutTitle: "من نحن",
     aboutSubtitle: "ثلاثة عقود من التميز الهندسي",
     aboutText1:
-      "شركة فيوتشر فرونت إكسلنس ش.م.م هي شريكك الموثوق لحلول الأتمتة الصناعية في عمان. مع أكثر من 30 عامًا من الخبرة المثبتة في أنظمة الجهد المنخفض ومحركات التردد المتغير وتقنيات الأتمتة الشاملة، نقدم حلولاً موثوقة تدعم العمليات الحيوية عبر صناعات متنوعة.",
+      "Future Front Excellence LLC هي شركة متخصصة في الأتمتة الصناعية تتمتع بخبرة جماعية تزيد عن 30 عامًا في مجال الجهد المنخفض (LV) ومحركات التردد المتغير (VFD) وأنظمة الأتمتة.",
     aboutText2:
-      "يجلب فريقنا عالي المهارة عقودًا من الخبرة العملية في التركيب والتشغيل والإصلاح والصيانة الوقائية لأنظمة المحركات الصناعية. نحن معتمدون من المصنع ومخولون بصيانة العلامات التجارية العالمية الرائدة بما في ذلك ABB و Siemens و Danfoss و Schneider Electric و Yaskawa و Delta و INVT و Toshiba و WEG و LS—مما يضمن أداء معداتك بأقصى كفاءة ووقت تشغيل أمثل.",
+      "لقد نجحنا في تقديم حلول لمجموعة واسعة من الصناعات، بما في ذلك النفط والغاز، والأسمنت والتعدين، والمياه والصرف الصحي (الضخ وتحلية المياه)، والتدفئة والتهوية وتكييف الهواء والبنية التحتية للمباني، والتصنيع، والأتمتة الصناعية. يدرك فريقنا التحديات الحقيقية التي تواجهها الصناعات في أنظمة المحركات. سواء كان ذلك في التركيب والتشغيل، أو تشخيص الأعطال وإصلاحها، أو التحديثات، أو الصيانة طويلة الأجل، فإننا نقدم حلولاً موثوقة وفعالة من حيث التكلفة مع التركيز بشكل كبير على الجودة والأداء.",
+    missionTitle: "مهمتنا",
+    missionDesc: "تقديم خدمات VFD والأتمتة عالية الجودة والموثوقة وذات تكلفة فعالة لمساعدة عملائنا على التشغيل بكفاءة وثقة. نهدف إلى بناء شراكات طويلة الأمد من خلال تقديم دعم سريع وحلول مرنة وخبرة فنية قوية تركز على احتياجات العميل.",
+    visionTitle: "رؤيتنا",
+    visionDesc: "أن نصبح أحد مزودي خدمات VFD والأتمتة الرائدين في المنطقة، والمعروفين بالتميز والخبرة عبر علامات تجارية متعددة ورضا العملاء. تسعى Future Front Excellence LLC إلى أن تكون الشريك الموثوق الذي يساعد الصناعات على التقدم من خلال حلول أتمتة أكثر ذكاءً واستدامة.",
     ourCapabilities: "الصناعات التي نخدمها بتميز",
     capability1: "النفط والغاز: عمليات المنبع والمصب والوسط",
     capability2: "الأسمنت والتعدين: التطبيقات الصناعية الثقيلة",

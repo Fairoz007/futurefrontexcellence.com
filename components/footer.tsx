@@ -27,22 +27,22 @@ export function Footer() {
               <h3 className="font-semibold text-white mb-4">{t("quickLinks")}</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#home" className="hover:text-blue-400 transition-colors">
+                  <a href="/" className="hover:text-blue-400 transition-colors">
                     {t("home")}
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="hover:text-blue-400 transition-colors">
+                  <a href="/about" className="hover:text-blue-400 transition-colors">
                     {t("about")}
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-blue-400 transition-colors">
+                  <a href="/services" className="hover:text-blue-400 transition-colors">
                     {t("services")}
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-blue-400 transition-colors">
+                  <a href="/contact" className="hover:text-blue-400 transition-colors">
                     {t("contact")}
                   </a>
                 </li>
@@ -54,18 +54,22 @@ export function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <span className="text-gray-400">{t("email")}:</span>{" "}
-                  <a href="mailto:info@futurefrontoman.com" className="hover:text-blue-400 transition-colors">
-                    info@futurefrontoman.com
+                  <a href="mailto:sales@futurefrontexcellence.com" className="hover:text-blue-400 transition-colors">
+                    sales@futurefrontexcellence.com
                   </a>
                 </li>
                 <li>
                   <span className="text-gray-400">{t("phone")}:</span>{" "}
-                  <a href="tel:+96812345678" className="hover:text-blue-400 transition-colors">
-                    +968 1234 5678
+                  <a href="tel:+96876373445" className="hover:text-blue-400 transition-colors">
+                    +968 7637 3445
+                  </a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="tel:+96875044677" className="hover:text-blue-400 transition-colors">
+                    +968 7504 4677
                   </a>
                 </li>
                 <li>
-                  <span className="text-gray-400">{t("location")}:</span> Oman
+                  <span className="text-gray-400">{t("location")}:</span> PC: 119, Al Amarat, Muscat, Sultanate of Oman
                 </li>
               </ul>
             </div>

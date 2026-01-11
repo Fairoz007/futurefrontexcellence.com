@@ -1,15 +1,14 @@
+import React from "react"
 import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Brands } from "@/components/brands"
+import { About } from "@/components/about"
 import { Footer } from "@/components/footer"
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        <Hero />
-        <Brands />
+        <About />
       </main>
       <Footer />
     </div>

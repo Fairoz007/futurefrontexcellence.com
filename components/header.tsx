@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Globe } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
@@ -18,13 +19,7 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setIsMenuOpen(false)
-    }
-  }
+  // navigation now uses page routes
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "ar" : "en")
@@ -51,30 +46,18 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-          <button
-            onClick={() => scrollToSection("home")}
-            className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-          >
+          <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
             {t("home")}
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-          >
+          </Link>
+          <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
             {t("about")}
-          </button>
-          <button
-            onClick={() => scrollToSection("services")}
-            className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-          >
+          </Link>
+          <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
             {t("services")}
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-          >
+          </Link>
+          <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
             {t("contact")}
-          </button>
+          </Link>
           <button
             onClick={toggleLanguage}
             className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors font-medium px-3 py-2 rounded-lg hover:bg-gray-100"
@@ -83,9 +66,9 @@ export function Header() {
             <Globe className="w-4 h-4" />
             <span className="text-sm font-semibold">{language === "en" ? "العربية" : "EN"}</span>
           </button>
-          <Button onClick={() => scrollToSection("contact")} className="shadow-sm">
-            {t("getInTouch")}
-          </Button>
+          <Link href="/contact">
+            <Button className="shadow-sm">{t("getInTouch")}</Button>
+          </Link>
         </nav>
 
         <div className="lg:hidden flex items-center gap-1 sm:gap-2">
@@ -109,36 +92,41 @@ export function Header() {
       {isMenuOpen && (
         <div className="lg:hidden border-t border-gray-200 bg-white shadow-lg">
           <nav className="container mx-auto px-4 sm:px-6 py-4 flex flex-col gap-1">
-            <button
-              onClick={() => scrollToSection("home")}
+            <Link
+              href="/"
+              onClick={() => setIsMenuOpen(false)}
               className="text-left text-gray-700 hover:text-blue-600 hover:bg-gray-50 active:bg-gray-100 transition-colors font-medium py-3.5 px-4 rounded-lg"
             >
               {t("home")}
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => setIsMenuOpen(false)}
               className="text-left text-gray-700 hover:text-blue-600 hover:bg-gray-50 active:bg-gray-100 transition-colors font-medium py-3.5 px-4 rounded-lg"
             >
               {t("about")}
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
+            </Link>
+            <Link
+              href="/services"
+              onClick={() => setIsMenuOpen(false)}
               className="text-left text-gray-700 hover:text-blue-600 hover:bg-gray-50 active:bg-gray-100 transition-colors font-medium py-3.5 px-4 rounded-lg"
             >
               {t("services")}
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
               className="text-left text-gray-700 hover:text-blue-600 hover:bg-gray-50 active:bg-gray-100 transition-colors font-medium py-3.5 px-4 rounded-lg"
             >
               {t("contact")}
-            </button>
-            <Button onClick={() => scrollToSection("contact")} className="w-full mt-2 h-12 text-base shadow-md">
+            </Link>
+            <Button onClick={() => setIsMenuOpen(false)} className="w-full mt-2 h-12 text-base shadow-md">
               {t("getInTouch")}
             </Button>
           </nav>
         </div>
       )}
+
     </header>
   )
 }

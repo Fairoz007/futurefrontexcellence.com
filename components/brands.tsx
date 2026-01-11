@@ -21,17 +21,12 @@ export function Brands() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-12 lg:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10 sm:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="inline-block mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-50 rounded-full border border-blue-100">
-              <span className="text-blue-700 text-xs sm:text-sm font-bold tracking-wide">TRUSTED PARTNERS</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">
-              {t("brandsTitle")}
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4">{t("brandsSubtitle")}</p>
+          <div className="mb-10 sm:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4 text-left">{t("brandsTitle")}</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 text-left">{t("brandsSubtitle")}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">

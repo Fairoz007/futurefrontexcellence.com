@@ -1,15 +1,14 @@
+import React from "react"
 import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Brands } from "@/components/brands"
+import { Services } from "@/components/services"
 import { Footer } from "@/components/footer"
 
-export default function HomePage() {
+export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        <Hero />
-        <Brands />
+        <Services />
       </main>
       <Footer />
     </div>
