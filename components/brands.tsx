@@ -25,8 +25,8 @@ export function Brands() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 sm:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4 text-left">{t("brandsTitle")}</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 text-left">{t("brandsSubtitle")}</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4 text-center sm:text-start">{t("brandsTitle")}</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 text-center sm:text-start">{t("brandsSubtitle")}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">

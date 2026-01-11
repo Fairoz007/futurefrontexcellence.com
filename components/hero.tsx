@@ -11,25 +11,23 @@ export function Hero() {
   // navigation now goes to dedicated pages
 
   return (
-    <section id="home" className="overflow-hidden pt-16 sm:pt-20">
-      <div className="w-full overflow-hidden">
-        <div className="mx-auto w-full max-w-full">
-          <div className="relative w-full h-[420px] md:h-[480px] lg:h-[480px] overflow-hidden">
-            <Image
-              src="/modern-industrial-automation-factory-floor-with-ro.jpg"
-              alt="Industrial Automation"
-              sizes="(max-width: 768px) 100vw, 1200px"
-              className="w-full h-full object-cover filter brightness-60"
-              width={1600}
-              height={480}
-              priority
-            />
-          </div>
-        </div>
+    <section
+      id="home"
+      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20"
+    >
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/modern-industrial-automation-factory-floor-with-ro.jpg"
+          alt="Industrial Automation"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-900/85 to-blue-950/80"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 relative z-10">
-          <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-1000 mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
+        <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <div className="inline-block mb-4 sm:mb-6 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-500/20 border border-blue-400/30 rounded-full backdrop-blur-sm">
             <span className="text-white text-xs sm:text-sm font-semibold tracking-wide">Excellence in Automation</span>
           </div>
